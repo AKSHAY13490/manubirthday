@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+nav {
+  background-color: #3498db;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+.flip-card-container {
+  perspective: 1000px;
+  height: 100vh;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.flip-card:hover {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 0;
+}
+
+.flip-card-front {
+  transform: rotateY(0deg);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('background_image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.full-page {
+  height: 100%;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  background-image: url('manu.jpg');
+  background-size: cover;
+  background-position: top;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+h1 {
+  color: #3498db;
+  margin-bottom: 10px;
+  font-size: 36px; /* Adjust the font size as needed */
+}
+
+p {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+video {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+
+
+audio {
+  margin-top: 20px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+a:hover {
+  border-bottom: 2px solid #3498db;
+}
+
+
+/* ... (previous styles) ... */
+
+.memories-page {
+  background-image: url('mn1.jpg');
+  /* Add your background image URL */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.memories-page p {
+  color: #2211BF; /* Set the text color to white */
+  font-size: 100px; /* Adjust the font size as needed */
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px; /* Adjust letter spacing for better visibility */
+  text-shadow: 0 0 20px rgba(255, 204, 0, 1); /* Neon glow effect */
+}
+
